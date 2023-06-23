@@ -20,7 +20,7 @@ mongoose
   .then(() => console.log("connected."));
 //   .catch(console.log("error"));
 
-app.listen(proces.env.PORT || 5000);
+app.listen(process.env.PORT || 5000);
 
 app.use(cors());
 app.use(bodyParser.json({ extended: true }));
