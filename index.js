@@ -9,6 +9,8 @@ import cors from "cors";
 import mongoose from "mongoose";
 import express from "express";
 import stylady from "./routes/stylady.js";
+import products from "./routes/product.js";
+import login from "./routes/login.js";
 
 const app = express();
 
@@ -26,6 +28,8 @@ app.use(cors());
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/stylady", stylady);
+app.use("/product", products);
+app.use("/login", login);
 
 /*const express = require("express")
 const collection = require("./mongo")
