@@ -1,5 +1,5 @@
 import express from "express";
-import { createLogin, } from "../controller/login.js";
+import { createLogin } from "../controller/login.js";
 const login = express.Router();
 
 // stylady.get("/", getApplication);
