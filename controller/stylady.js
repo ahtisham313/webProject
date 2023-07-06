@@ -12,11 +12,7 @@ export const createLogin = async(res, req) => {
     } catch (error) {
       console.log("not saved..."); 
     }
-  };
-
-
-
-
+  };  
 
 export const createApplication = async (req, res) => {
   console.log("Controller Reached");
